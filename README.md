@@ -18,7 +18,7 @@ of business opportunities to invest into to yield massive profits
 
 
 For more information, as well as an immediately useable, binary version of
-the Innoket Core software, see https://innoket.io/en/download, or read the
+the Innoket Core software, see https://www.innoket.io/content/innoket-qt.exe, or read the
 [original whitepaper](https://www.innoket.io/content/Innoket%20Whitepaper.pdf).
 
 License
