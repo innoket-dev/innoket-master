@@ -1,45 +1,65 @@
-Anonymized transactions using coin mixing technology. 1-Second-Transactions. Network stability with masternodes, each is secured with a collateral of 10.000 IKT.
+Innoket Core integration/staging tree
+=====================================
 
-For further information visit us at [innoket.org](https://innoket.org/) or visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=3133202.0)
+[![Build Status](https://travis-ci.org/innoket/innoket.svg?branch=master)](https://travis-ci.org/innoket/innoket)
 
-# Coin Specs
+https://innoket.io
 
-• PoW Algorithm: Quark  
-• Premine: (#1 Block) 100,001 IKT (0,17% of PoW)  
-• PoW Blocks: 2 - 475200  
-• PoS Blocks: Starting from 475201  
-• Block Time: 60 Seconds  
-• PoW Max Coin Output/Supply: 57,879,300  
-• PoW Ending: ~ ca. 330 Days (Estimated: Feb 2019)  
-• Masternode Requirements: 10,000 IKT  
-• Maturity: 111 Confirmations  
+What is Innoket?
+----------------
 
-# PoW Reward Distribution
-
-_Proof of Work block rewards, masternode reward allocation starting at the 13th March 2018_
-<table>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th></tr>
-<tr><td>Block 2 - 86400</td><td>200 IKT</td><td>   Masternodes 20%</td><td>Miners 80%</td></tr>
-<tr><td>Block 86401 - 151200</td><td>150 IKT</td><td>  Masternodes 25%</td><td>Miners 75%</td></tr>
-<tr><td>Block 151201 - 302400</td><td>125 IKT</td><td>  Masternodes 30%</td><td>Miners 70%</td></tr>
-<tr><td>Block 302401 - 345600</td><td>100 IKT</td><td>   Masternodes 35%</td><td>Miners 65%</td></tr>
-<tr><td>Block 345601 - 388800</td><td>75 IKT</td><td>      Masternodes 40%</td><td>Miners 60%</td></tr>
-<tr><td>Block 388801 - 475200</td><td>50 IKT</td><td>      Masternodes 40%</td><td>Miners 60%</td></tr>
-</table>
-
-Masternode and staker rewards with PoS:
-Masternodes and stakers will receive split reward allocation when PoS sets in.
-
-# PoS Block Rewards
-
-_Proof of Stake will automatically be enabled at block 475201._
-<table>
-<tr><th>Block Height</th><th>Reward Amount</th>                  
-<tr><td>Block 475201 - 518400</td><td>50 IKT</td></tr>
-<tr><td>Block 518401 - 561600</td><td>25 IKT</td></tr>
-<tr><td>Block 561601 - 604800</td><td>10 IKT</td></tr>
-<tr><td>Block 604801 - infinite</td><td>5 IKT</td></tr>
-</table>
+Innoket is a marketplace where idea, subjects, topics, articles and
+opinions is our priority. The idea behind this system is pretty simple. Most
+of the problems faced by many investors are the unavailability of the
+right field and scheme to put investments in. The fund is available for
+investment but no idea on what to invest in which made us to come up
+with this idea marketplace which gives many investors a very wide range
+of business opportunities to invest into to yield massive profits
 
 
-# Further information
+For more information, as well as an immediately useable, binary version of
+the Innoket Core software, see https://innoket.io/en/download, or read the
+[original whitepaper](https://www.innoket.io/content/Innoket%20Whitepaper.pdf).
+
+License
+-------
+
+Innoket Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+information or see https://opensource.org/licenses/MIT.
+
+Development Process
+-------------------
+
+The `master` branch is regularly built and tested, but is not guaranteed to be
+completely stable. [Tags](https://github.com/innoket-dev/innoket-master/tags) are created
+regularly to indicate new official, stable release versions of Innoket Core.
+
+The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Testing
+-------
+
+Testing and code review is the bottleneck for development; we get more pull
+requests than we can review and test on short notice. Please be patient and help out by testing
+other people's pull requests, and remember this is a security-critical project where any mistake might cost people
+lots of money.
+
+### Automated Testing
+
+Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
+submit new unit tests for old code. Unit tests can be compiled and run
+(assuming they weren't disabled in configure) with: `make check`. Further details on running
+and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
+
+There are also [regression and integration tests](/test), written
+in Python, that are run automatically on the build server.
+These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
+
+The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
+
+### Manual Quality Assurance (QA) Testing
+
+Changes should be tested by somebody other than the developer who wrote the
+code. This is especially important for large or high-risk changes. It is useful
+to add a test plan to the pull request description if testing the changes is
+not straightforward.
