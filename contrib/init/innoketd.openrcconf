@@ -1,0 +1,26 @@
+# /etc/conf.d/innoketd: config file for /etc/init.d/innoketd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/innoket/innoket.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/innoketd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/innoketd.pid"
+
+# Where to write innoketd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/innoketd"
+
+# User and group to own innoketd process
+#BITCOIND_USER="innoket"
+#BITCOIND_GROUP="innoket"
+
+# Path to innoketd executable
+#BITCOIND_BIN="/usr/bin/innoketd"
+
+# Nice value to run innoketd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

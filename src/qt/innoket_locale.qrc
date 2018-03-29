@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/innoket_bg.qm</file>
+        <file alias="de">locale/innoket_de.qm</file>
+        <file alias="en">locale/innoket_en.qm</file>
+        <file alias="es">locale/innoket_es.qm</file>
+        <file alias="fi">locale/innoket_fi.qm</file>
+        <file alias="fr">locale/innoket_fr.qm</file>
+        <file alias="it">locale/innoket_it.qm</file>
+        <file alias="ja">locale/innoket_ja.qm</file>
+        <file alias="pl">locale/innoket_pl.qm</file>
+        <file alias="pt">locale/innoket_pt.qm</file>
+        <file alias="ru">locale/innoket_ru.qm</file>
+        <file alias="sk">locale/innoket_sk.qm</file>
+        <file alias="sv">locale/innoket_sv.qm</file>
+        <file alias="vi">locale/innoket_vi.qm</file>
+        <file alias="zh_CN">locale/innoket_zh_CN.qm</file>
+        <file alias="zh_TW">locale/innoket_zh_TW.qm</file>
+    </qresource>
+</RCC>
