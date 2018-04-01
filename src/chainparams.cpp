@@ -110,8 +110,8 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // IKT: 1 day
         nTargetSpacing = 1 * 60;  // IKT: 1 minute
-        nLastPOWBlock = 210001;
-        nMaturity = 110;
+        nLastPOWBlock = 5000;
+        nMaturity = 21;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 10000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 1; // we use the version 2 for dmd
@@ -133,12 +133,11 @@ public:
         genesis.nNonce = 723048;
 
         hashGenesisBlock = genesis.GetHash();
-printf("gen : %s",hashGenesisBlock.ToString().c_str());
         assert(hashGenesisBlock == uint256("0x00000b377e17b693f30e90ef1ad576e71558434cd9b74db99b3b73a15b256020"));
         assert(genesis.hashMerkleRoot == uint256("0xd35963f70458b24d8286c79ad48e97be312d3eb0984b3d7d2c94d7f3735217fa"));
   	vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("45.77.120.179", "45.77.120.179"));
-	vSeeds.push_back(CDNSSeedData("45.76.131.122", "45.76.131.122"));
+        vSeeds.push_back(CDNSSeedData("45.76.219.78", "45.76.219.78"));
+	vSeeds.push_back(CDNSSeedData("45.76.204.117", "45.76.204.117"));
         //vFixedSeeds.clear();
 
 
